@@ -1,0 +1,116 @@
+<html>
+    <head>
+        <title>Product Table & Form</title>
+    </head>
+    <body>
+        <center>
+            <section>
+                <h1>Product Form</h1>
+                <form>
+                    <label>Product Name</label>
+                    <br/>
+                    <input type="text" id="ProductName" name="ProductName">
+                    <br/>
+                    <label>Product Categories</label>
+                    <br/>
+                    <select name="Categories" id="Categories">
+                        <option Selected Disabled="">Select Categories</option>
+                        <option value="Platinum">Platinum</option>
+                        <option value="diamont">Food</option>
+                        <option value="Gold">Gold</option>
+                        <option value="Silver">Silver</option>
+                        <br/>
+                  </select>
+                  <br/>
+                <img src="../assets/images/3.platinum.jpg" width="150" height="150">
+                 <img src="../assets/images/2.diamont.jpg" width="150" height="150"> 
+                 <img src="../assets/images/1.gold.jpg" width="150" height="150">
+                 <img src="../assets/images/4.silver.jpg" width="150" height="150">  
+                 <br/>
+                 <label>Prize</label>
+                 <br/>
+                 <input type="Number" Name="Prize">
+                 <br/>
+                 <label>Quantity</label>
+                 <br/>
+                 <input type="Number" Name="Quantity">
+                 <br/>
+                 <label>City</label>
+                 <br/>
+                 <select name="City" id="City">
+                    <option Selected Disabled="">Select City</option>
+                    <option value="Chennai">Chennai</option>
+                    <option value="Pudukkottai">Pudukkottai</option>
+                    <option value="Madurai">Madurai</option>
+                    <option value="Theni">Theni</option>
+                </select><br/>
+                <label>product Shippement id</label>
+                <br/>
+                <input type="Number" name="Shippement">
+                <br/>
+                <label>Product Weight</label>
+                <br/>
+                <input type="Number" name="Weight" step="0.01">
+                <br/>
+                <label>Product Licence</label>
+                <br/>
+                <input type="radio" name="Licence" value="yes"> yes
+                <input type="radio" name="Licence" value="No"> No 
+                <br/>
+                <label>Approved Product</label>
+                <br/> 
+                <input type="checkbox" name="Approved" value="yes">  BIS
+                <input type="checkbox" name="Approved" value="yes">  HALLMARK
+                <input type="checkbox" name="Approved" value="yes">  GOVERMENT APPROVED    
+                </form>
+            </section>
+            <section>
+                <h1>product Table</h1>
+                <table border="">
+                   <tr>
+                       <th>Product Name</th>
+                       <th>Categories</th>
+                       <th>Prize</th>
+                       <th>Quantity</th>
+                       <th>City</th>
+                       <th>Weight</th>
+                   </tr>
+                   <th>platinum</th>
+                       <th>jewelleries</th>
+                       <th>100000</th>
+                       <th>10</th>
+                       <th>chennai</th>
+                       <th>0.5</th>
+                </tr>
+                <tr>
+                    <th>diamont</th>
+                       <th>jewelleries</th>
+                       <th>100000</th>
+                       <th>10</th>
+                       <th>chennai</th>
+                       <th>0.5</th>
+                </tr>
+                <tr>
+                    <th>Gold</th>
+                       <th>jewelleries</th>
+                       <th>100000</th>
+                       <th>10</th>
+                       <th>chennai</th>
+                       <th>0.5</th>
+                </tr>
+                <tr>
+                    <th>Silver</th>
+                       <th>jewelleries</th>
+                       <th>100000</th>
+                       <th>10</th>
+                       <th>Chennai</th>
+                       <th>0.5</th>
+                </tr>
+
+                     
+                   
+                </table>
+            </section>
+        </center>
+    </body>
+</html>
