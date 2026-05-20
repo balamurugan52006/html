@@ -1,0 +1,38 @@
+*{
+
+    background-color: black;
+    
+}
+ 
+h1 {
+
+   color: aqua;
+    
+
+}
+
+.link{
+
+    color: aquamarine;
+}
+
+#head{
+   
+    color: blue;
+}
+
+h1,p,p{
+
+    color: rgb(100, 180, 21);
+}
+
+/* descendant selector */
+/* space */
+div p{
+    color: red;
+}
+
+div > p {
+      color: blueviolet;
+
+}
