@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+.parent{
+    display: flex;
+    background-color: black;
+    gap: 10px;
+    justify-content: space-around;
+    align-items: center;
+    height: 400px;
+  
+}
+
+
+.dis{
+
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mi{
+    background-color: blue;
+    height: 200px;
+     width: 200px;
+      display: flex;
+      justify-content: center;
+    align-items: center;
+}
+ 
+.rcb{
+
+    background-color: red;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+.rr{
+    background-color: pink;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
