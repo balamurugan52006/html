@@ -1,90 +1,181 @@
-<html>
-    <head>task list
-    </head>
-    <body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Task List Dashboard</title>
 
-        <h1>html</h1>
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
 
-        <a href="../html/day1/mystory.html">day1 assaignment task1</a>
-        <br>
-        <a href="../html/day1/mystorystructure.html">day1 assaignment task2</a>
-        <br>
-        <a href="../html/day1/types of tags.html">day1 assaignment task3</a>
-        <br>
-        <a href="../html/day2/blockandinline.html">day2 assaignment tas1</a>
-        <br>
-        <a href="../html/day2/blocklevel.html">day2 assaignment task2</a>
-        <br>
-        <a href="../html/day2/inline.html">day2 assaignment task3</a>
-        <br>
-        <a href="../html/day2/tags.html">day2 assaignment task4</a>
+/* ✅ COLOR CHANGED ONLY */
+body{
+background:#e8f0fe;
+color:#111827;
+}
 
-        <br>
-        <a href="../html/day3/TNresults.html">day3 assaignmen</a>
-        <br>
-        <a href="../html/day4/tnelection.html">day4 assaignment task1</a>
-        <br>
-        <a href="../html/day4/TNresults.html">day4 assaignment task2</a>
-        <br>
-        <a href="../html/day5/iplinfo.html">day5 assaignment</a>
-        <br>
-        <a href="../html/day6/heroselection.html">day6 assaignment</a>
-        <br>
-        <a href="../html/day7/form&table.html">day7 assaignment</a>
-        <br>
-        <a href="../html/day9/htmlful.html">day9 assaignment</a>
+/* HEADER */
+header{
+background:rgba(0,0,0,0.4);
+backdrop-filter:blur(10px);
+padding:25px;
+text-align:center;
+border-bottom:1px solid rgba(0,0,0,0.1);
+position:sticky;
+top:0;
+}
 
-        <h1>css</h1>
-        <br>
-        <a href="../CSS/day1/inline.html">day1 CSS task 1</a>
-        <br>
-        <a href="../CSS/day1/internal.html">day1 CSS task 2</a>
-        <br>
-        <a href="../CSS/day1/external.html">day1 CSS task 3</a>
-        <br>
-        <a href="../CSS/assets/text/task1.txt">day1 CSS task 4</a>
-        <br>
-        <a href="../CSS/day2/external1.html">day2 CSS task</a>
-        <br>
-        <a href="../CSS/day3/boxmodel.html">day3 CSS task1</a>
-        <br>
-        <a href="../CSS/day3/boxcreation.html">day3 CSS task2</a>
-        <br>
-        <a href="../CSS/day3/wrapping.html">day3 CSS task3</a>
-        <br>
-        <a href="../CSS/day5/display.html">day4 CSS task</a>
-        <br>
-        <a href="../CSS/day6/navbar.html">day6 CSS task</a>
-        <br>
-        <a href="../CSS/day11/fagma.html">day11 CSS task</a>
-        <br>
-        <a href="../CSS/day7/thumbnail.html">day7 CSS task</a>
-        <br>
-        <a href="../CSS/day8/flex.html">day8 CSS task</a>
-        <br>
-        <a href="../CSS/day9/grid.html">day9 CSS task</a>
-        <br>
-        <a href="../CSS/day12/css.html">day12 CSS task</a>
-        <br>
+header h1{
+font-size:2rem;
+color:#00bcd4;
+letter-spacing:2px;
+}
 
-        JavaScript
+header p{
+font-size:0.9rem;
+opacity:0.7;
+margin-top:5px;
+}
 
-        <a href="../JS/day1/script.js">day1 JS task1</a>
-        <br>
-        <a href="../JS/day1/variables.html">day1 JS task2</a>
-        <br>
-        <a href="../JS/day2/datatype.html">day2 JS task1</a>
-        <br>
-        <a href="../JS/day2/variables.html">day2 JS task2</a>
-        <br>
-        <a href="../JS/day3/operator.html">day3 JS task1</a>
-        <br>
-        <a href="../JS/day3/operators-task.html">day3 JS task2</a>
-        <br>
-        <a href="../JS/day4/condition.html">day4 JS task</a>
-        <br>
-        <a href=""></a>
+/* SECTION */
+.section{
+max-width:1000px;
+margin:30px auto;
+padding:20px;
+}
 
+.label{
+font-size:1.2rem;
+font-weight:bold;
+margin-bottom:15px;
+color:#00bcd4;
+border-left:4px solid #00bcd4;
+padding-left:10px;
+}
 
-    </body>
+/* GRID */
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));
+gap:12px;
+}
+
+/* LINKS */
+a{
+display:block;
+text-decoration:none;
+background:#ffffff;
+padding:14px;
+border-radius:10px;
+border:1px solid #ddd;
+color:#111827;
+transition:0.3s;
+font-size:0.95rem;
+}
+
+/* HOVER */
+a:hover{
+transform:translateY(-5px);
+border-color:#00bcd4;
+box-shadow:0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* ICON */
+a::before{
+content:"📌 ";
+}
+
+footer{
+text-align:center;
+padding:20px;
+font-size:0.8rem;
+opacity:0.6;
+margin-top:20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>🚀 TASK LIST DASHBOARD</h1>
+<p>Frontend Learning Progress Tracker</p>
+</header>
+
+<!-- HTML -->
+<div class="section">
+<div class="label">HTML TASKS</div>
+<div class="grid">
+
+<a href="../html/day1/mystory.html">day1 assaignment task1</a>
+<a href="../html/day1/mystorystructure.html">day1 assaignment task2</a>
+<a href="../html/day1/types of tags.html">day1 assaignment task3</a>
+<a href="../html/day2/blockandinline.html">day2 assaignment tas1</a>
+<a href="../html/day2/blocklevel.html">day2 assaignment task2</a>
+<a href="../html/day2/inline.html">day2 assaignment task3</a>
+<a href="../html/day2/tags.html">day2 assaignment task4</a>
+<a href="../html/day3/TNresults.html">day3 assaignmen</a>
+<a href="../html/day4/tnelection.html">day4 assaignment task1</a>
+<a href="../html/day4/TNresults.html">day4 assaignment task2</a>
+<a href="../html/day5/iplinfo.html">day5 assaignment</a>
+<a href="../html/day6/heroselection.html">day6 assaignment</a>
+<a href="../html/day7/form&table.html">day7 assaignment</a>
+<a href="../html/day9/htmlful.html">day9 assaignment</a>
+
+</div>
+</div>
+
+<!-- CSS -->
+<div class="section">
+<div class="label">CSS TASKS</div>
+<div class="grid">
+
+<a href="../CSS/day1/inline.html">day1 CSS task 1</a>
+<a href="../CSS/day1/internal.html">day1 CSS task 2</a>
+<a href="../CSS/day1/external.html">day1 CSS task 3</a>
+<a href="../CSS/assets/text/task1.txt">day1 CSS task 4</a>
+<a href="../CSS/day2/external1.html">day2 CSS task</a>
+<a href="../CSS/day3/boxmodel.html">day3 CSS task1</a>
+<a href="../CSS/day3/boxcreation.html">day3 CSS task2</a>
+<a href="../CSS/day3/wrapping.html">day3 CSS task3</a>
+<a href="../CSS/day5/display.html">day4 CSS task</a>
+<a href="../CSS/day6/navbar.html">day6 CSS task</a>
+<a href="../CSS/day11/fagma.html">day11 CSS task</a>
+<a href="../CSS/day7/thumbnail.html">day7 CSS task</a>
+<a href="../CSS/day8/flex.html">day8 CSS task</a>
+<a href="../CSS/day9/grid.html">day9 CSS task</a>
+<a href="../CSS/day12/css.html">day12 CSS task</a>
+
+</div>
+</div>
+
+<!-- JS -->
+<div class="section">
+<div class="label">JAVASCRIPT TASKS</div>
+<div class="grid">
+
+<a href="../JS/day1/script.js">day1 JS task1</a>
+<a href="../JS/day1/variables.html">day1 JS task2</a>
+<a href="../JS/day2/datatype.html">day2 JS task1</a>
+<a href="../JS/day2/variables.html">day2 JS task2</a>
+<a href="../JS/day3/operator.html">day3 JS task1</a>
+<a href="../JS/day3/operators-task.html">day3 JS task2</a>
+<a href="../JS/day4/condition.html">day4 JS task</a>
+<a href="../JS/day5/array.html">day5 JS task1</a>
+<a href="../JS/day5/fuction.html">day5 JS task2</a>
+<a href="../JS/day5/mini.html">day5 JS task3</a>
+
+</div>
+</div>
+
+<footer>
+Made with  | Task Dashboard
+</footer>
+
+</body>
 </html>
